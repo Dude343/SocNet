@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SocNet/static/css/main.8ff3b5ea.css",
+    "main.js": "/SocNet/static/js/main.4dea4932.js",
+    "static/js/787.66cb4309.chunk.js": "/SocNet/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/SocNet/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/SocNet/index.html",
+    "main.8ff3b5ea.css.map": "/SocNet/static/css/main.8ff3b5ea.css.map",
+    "main.4dea4932.js.map": "/SocNet/static/js/main.4dea4932.js.map",
+    "787.66cb4309.chunk.js.map": "/SocNet/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ff3b5ea.css",
+    "static/js/main.4dea4932.js"
+  ]
+}
