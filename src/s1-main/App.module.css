@@ -2,10 +2,17 @@
     --header_height: 60px;
 }
 
-.hw {
+.hw1 {
+    padding: 106px 0;
+}
 
+.hw {
+    padding: 24px 70px 35px;
+    border-bottom: 1px solid #D9D9D9;
+    
 }
 
 .hwTitle {
-
+    padding: 25px 70px 10px 70px;
+    border-bottom: 1px solid #D9D9D9;
 }
