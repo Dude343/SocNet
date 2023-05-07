@@ -1,28 +1,34 @@
 .friendMessage {
-        background-color: #0066CC;
-        margin-bottom: 47px
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 47px;
+        gap: 5px;
 }
 
-.friendImageAndText {}
+.friendImageAndText {
+        display: flex;
+        gap: 14px;
+        align-items: flex-end;
+}
 
 .friendImageAndText img {
         width: 48px;
         height: 48px;
-        left: 70px;
-        top: 311px;
-        
+        left: 1162px;
+        top: 204px;
+
 }
 
 .friendText {
 
-        display: inline-block;
-        right: 0px;
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
         line-height: 22px;
-        background-color: #0066CC;
+        background: #F5F7FB;
+        box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+        border-radius: 20px;
+        padding: 8px 13px;
 }
 
 .friendText:after {}
@@ -49,4 +55,5 @@
         font-weight: 600;
         font-size: 10px;
         line-height: 12px;
+        padding-left: 10px;
 }

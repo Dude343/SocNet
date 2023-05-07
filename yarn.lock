@@ -4194,16 +4194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:^2.6.1":
-  version: 2.6.4
-  resolution: "async@npm:2.6.4"
-  dependencies:
-    lodash: "npm:^4.17.14"
-  checksum: 87b000b0c272771a0695682f874763e40813766e98ccb58f7f54404190b4af44ce494e40ecef813dffe04f60d4f618e18842edc7814d6186765144c0b53357d4
-  languageName: node
-  linkType: hard
-
-"async@npm:^3.2.3":
+"async@npm:^3.2.3, async@npm:^3.2.4":
   version: 3.2.4
   resolution: "async@npm:3.2.4"
   checksum: 9719e38d24e9922c255ee9ae925fb668ef52243f9866a1b59e423a3bb6150a886b3c37287348ceefa09cd3f6fa1a29dcc770eeb70642acb13674363b2d5b2b21
@@ -5863,10 +5854,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"email-addresses@npm:^3.0.1":
-  version: 3.1.0
-  resolution: "email-addresses@npm:3.1.0"
-  checksum: 2a07a6df3437c270c0e575e7b1bbca5e80cff59dfddb894edb5477c7f542cba17c7fd1df4b96f9d233ed21e699ab385a758e4770eb7abf73e109564b4aea9f10
+"email-addresses@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "email-addresses@npm:5.0.0"
+  checksum: c4d0a25ace11c2f9ade44a2a1e7646e2f32466be484c1473caa9339b4e82d699c7a24997fd4f96df584e5e7cd21ece05cbac7b05422a81c16bc38a8114a62730
   languageName: node
   linkType: hard
 
@@ -7030,13 +7021,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gh-pages@npm:4.0.0":
-  version: 4.0.0
-  resolution: "gh-pages@npm:4.0.0"
+"gh-pages@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "gh-pages@npm:5.0.0"
   dependencies:
-    async: "npm:^2.6.1"
+    async: "npm:^3.2.4"
     commander: "npm:^2.18.0"
-    email-addresses: "npm:^3.0.1"
+    email-addresses: "npm:^5.0.0"
     filenamify: "npm:^4.3.0"
     find-cache-dir: "npm:^3.3.1"
     fs-extra: "npm:^8.1.0"
@@ -7044,7 +7035,7 @@ __metadata:
   bin:
     gh-pages: bin/gh-pages.js
     gh-pages-clean: bin/gh-pages-clean.js
-  checksum: 547447aeddbbf2c309f655ed2b2a343daef55b78fa217e331d7db79d8c6baf8ff2828c3dd117ba67b45ae5cd19133b987b64a8ec5d443b767eee3ee501606412
+  checksum: 9d65197074a2bfa12c025da0ddb8e3ae2aa6718b2ac85bff5462a8f791a12325d1a6d959b7d9e8213d505ab503eea1726e60ac5b08a40bf949fc7eac6fc04d64
   languageName: node
   linkType: hard
 
@@ -7514,7 +7505,7 @@ __metadata:
     "@types/react-dom": "npm:18.0.6"
     "@types/uuid": "npm:8.3.4"
     axios: "npm:0.27.2"
-    gh-pages: "npm:4.0.0"
+    gh-pages: "npm:^5.0.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-redux: "npm:8.0.4"
@@ -9080,7 +9071,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 3ac18e92108d68f88429fcddee609e42cf2b653583d9bac22308815a4cd6b185b89a0ad0d9b0c670c371d9d6b61571a98fee6b36e1db14e52766ca253ed9cba0
