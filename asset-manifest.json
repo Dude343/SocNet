@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SocNet/static/css/main.199bc813.css",
-    "main.js": "/SocNet/static/js/main.0c097dc0.js",
+    "main.css": "/SocNet/static/css/main.6792a4ff.css",
+    "main.js": "/SocNet/static/js/main.1b02e9fe.js",
     "static/js/787.66cb4309.chunk.js": "/SocNet/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/SocNet/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/SocNet/index.html",
-    "main.199bc813.css.map": "/SocNet/static/css/main.199bc813.css.map",
-    "main.0c097dc0.js.map": "/SocNet/static/js/main.0c097dc0.js.map",
+    "main.6792a4ff.css.map": "/SocNet/static/css/main.6792a4ff.css.map",
+    "main.1b02e9fe.js.map": "/SocNet/static/js/main.1b02e9fe.js.map",
     "787.66cb4309.chunk.js.map": "/SocNet/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.199bc813.css",
-    "static/js/main.0c097dc0.js"
+    "static/css/main.6792a4ff.css",
+    "static/js/main.1b02e9fe.js"
   ]
 }
