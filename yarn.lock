@@ -3437,10 +3437,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/uuid@npm:8.3.4":
-  version: 8.3.4
-  resolution: "@types/uuid@npm:8.3.4"
-  checksum: 42fa6d1868c459444c257fe418f624067aabfbe550ce97d9c124c5759a16f03bc475dc82086eefee807571608830b2f955e688c0e63e40aad5eb29b573471492
+"@types/uuid@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "@types/uuid@npm:9.0.1"
+  checksum: ca96225b4d47b8146380c0f60921b2a0b62acf3a8def03e8e7b369ed3b0180989c12f8305eb71ffc0cecb944102e18eec1260a3e84040d9a48de987d3aa00148
   languageName: node
   linkType: hard
 
@@ -7503,7 +7503,7 @@ __metadata:
     "@types/node": "npm:16.11.56"
     "@types/react": "npm:18.0.17"
     "@types/react-dom": "npm:18.0.6"
-    "@types/uuid": "npm:8.3.4"
+    "@types/uuid": "npm:^9.0.1"
     axios: "npm:0.27.2"
     gh-pages: "npm:^5.0.0"
     react: "npm:18.2.0"
@@ -7513,7 +7513,7 @@ __metadata:
     react-scripts: "npm:5.0.1"
     redux: "npm:4.2.0"
     typescript: "npm:4.7.4"
-    uuid: "npm:9.0.0"
+    uuid: "npm:^9.0.0"
     web-vitals: "npm:2.1.4"
   languageName: unknown
   linkType: soft
@@ -13097,21 +13097,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uuid@npm:9.0.0":
-  version: 9.0.0
-  resolution: "uuid@npm:9.0.0"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: e1f76aff372e430bb129157360fd4cd3b393411b245604ea78e178a822ab7874ec2ebecec03ce94422b0b80bbd24733c6fa1df166c9cbad5086ef4b4843140bb
-  languageName: node
-  linkType: hard
-
 "uuid@npm:^8.3.2":
   version: 8.3.2
   resolution: "uuid@npm:8.3.2"
   bin:
     uuid: dist/bin/uuid
   checksum: 236a12282c6fa32f326aa1b6d5699a843572e9ab7de84a1507a6b7c315fdcf55bf6ed333fd37d35c5c656f4cb96af998844e1c8cae281c442a1ec3b66df62962
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "uuid@npm:9.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: e1f76aff372e430bb129157360fd4cd3b393411b245604ea78e178a822ab7874ec2ebecec03ce94422b0b80bbd24733c6fa1df166c9cbad5086ef4b4843140bb
   languageName: node
   linkType: hard
 
