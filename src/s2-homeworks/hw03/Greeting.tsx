@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent } from 'react'
+import React, { ChangeEvent, FormEvent, KeyboardEvent } from 'react'
 import s from './Greeting.module.css'
 // VITALY
 type GreetingPropsType = {
@@ -6,11 +6,13 @@ type GreetingPropsType = {
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any   WHY e:blabla
     addUser: () => void // need to fix any
     onBlur: () => void // need to fix any
-    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void // need to fix any
+    onEnter: (e: FormEvent<HTMLFormElement>) => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
     lastUserName?: string // need to fix any
 }
+
+
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
@@ -27,6 +29,11 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
     const inputClass = error === 'Ошибка! Введите имя!' ? s.errorInput : s.input // need to fix with (?:)
 
+    const onSubmitHandler = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        onEnter(e)
+    }
+
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <div className={s.text}>
@@ -36,14 +43,16 @@ const Greeting: React.FC<GreetingPropsType> = (
                 </span>
             </div>
 
-            <div className={s.inputAndButtonContainer}>
+
+
+            <form className={s.inputAndButtonContainer} onSubmit={onSubmitHandler}>
                 <div>
                     <input
                         id={'hw3-input'}
                         value={name}
                         onChange={setNameCallback}
                         className={inputClass}
-                        onKeyDown={onEnter}
+
                         onBlur={onBlur}
                     />
                     <div id={'hw3-error'} className={s.error}>
@@ -51,15 +60,14 @@ const Greeting: React.FC<GreetingPropsType> = (
                     </div>
                 </div>
 
-                <button
+                <input type='submit'
                     id={'hw3-button'}
-                    onClick={addUser}
+                    // onClick={addUser}
                     className={s.button}
                     disabled={!name.trim()}
-                >
-                    Add
-                </button>
-            </div>
+                    value="Add"
+                />
+            </form>
 
             {lastUserName && (
                 <div className={s.greeting}>

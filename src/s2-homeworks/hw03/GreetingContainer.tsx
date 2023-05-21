@@ -1,4 +1,4 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
+import React, { ChangeEvent, FormEvent, KeyboardEvent, useState } from 'react'
 import Greeting from './Greeting'
 import { UserType } from './HW3'
 
@@ -14,14 +14,15 @@ export const pureAddUser = (name: string, setError: Function, setName: Function,
 
     if (name.trim() === '') {
         setError('Ошибка! Введите имя!')
-    } else {
-        addUserCallback(name)
-        setName('')
+        return
     }
+    addUserCallback(name)
+    setName('')
+
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
 }
 
-export const pureOnBlur = (name: string, setError: Function) => { // если имя пустое - показать ошибку
+export const pureOnBlur = (name: string, setError: (error: string) => void) => { // если имя пустое - показать ошибку
 
     // !name ? setError('Ошибка! Введите имя') : console.log("all s gut")
 
@@ -30,11 +31,9 @@ export const pureOnBlur = (name: string, setError: Function) => { // если и
     }
 }
 
-export const pureOnEnter = (e: any, addUser: Function) => { // если нажата кнопка Enter - добавить
-    if (e.key === 'Enter') {
-        addUser()
-    }
-}
+// export const pureOnEnter = (addUser: Function) => { // если нажата кнопка Enter - добавить
+//     addUser()
+// }
 
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
@@ -63,13 +62,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-        pureOnEnter(e, addUser)
+    const onEnter = () => {
+        addUser()
     }
 
     const totalUsers = users.length // need to fix
-    const lastUserName = users[users.length - 1] === undefined ? ' ' : users[users.length - 1].name // need to fix
-    console.log(users)
+    const lastUserName = users.at(-1) === undefined ? '' : users.at(-1)!.name // need to fix
+
     return (
         <Greeting
             name={name}

@@ -26,7 +26,7 @@ export type UserType = {
 export const pureAddUserCallback = (name: string, setUsers: (value: Array<UserType>) => void, users: Array<UserType>) => { // need to fix any why no []? and why in setusers value?
     const user = { // need to fix
         _id: v1(),
-        name: name
+        name: name  // или просто name, если имена совпадают 
     }
     setUsers([...users, user])
 }
@@ -36,7 +36,6 @@ const HW3 = () => {
 
     const addUserCallback = (name: string) => { // need to fix any
         pureAddUserCallback(name, setUsers, users)
-        console.log(name)
     }
 
     return (
