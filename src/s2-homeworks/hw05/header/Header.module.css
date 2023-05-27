@@ -1,8 +1,22 @@
 .burgerMenuIcon {
+        margin: 20px 1186px 16px 70px;
+        cursor: pointer;
+
 }
 
 .header {
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        background-color: white;
+        box-shadow: 0 0 40px rgba(29, 33, 38, 0.13), 0 0 2px rgba(29, 33, 38, 0.1);
 }
 
 .header h1 {
+        position: relative;
+        display: inline;
+        bottom: 17px;
+        left: 70px;
 }

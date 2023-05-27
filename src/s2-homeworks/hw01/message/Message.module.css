@@ -1,61 +1,71 @@
 .message {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 47px;
-        gap: 5px;
-}
-
-.messageRight {
-        align-items: flex-end;
+        margin-bottom: 1.5rem;
 }
 
 .imageAndText {
         display: flex;
-        gap: 14px;
+        flex-direction: row-reverse;
+        gap: 0.75rem;
         align-items: flex-end;
+        margin-bottom: 0.3125rem;
 }
 
 .imageAndText img {
-        width: 48px;
-        height: 48px;
-        left: 1162px;
-        top: 204px;
+        width: 3rem;
 }
 
 .text {
-        font-style: normal;
-        font-size: 18px;
-        line-height: 22px;
+        position: relative;
+        color: #fff;
         background-color: #0066CC;
-        box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
-        border-radius: 20px;
-        padding: 8px 13px;
-        color: white;
+        padding: 0.5rem 0.8125rem;
+        box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+        border-radius: 0.5rem 0.5rem 0 0.5rem;
+        max-width: 50%;
+        text-align: right;
 }
 
-.text:after {}
+.text:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -0.65rem;
+        border-right: 0.75rem solid transparent;
+        border-bottom: 0.75rem solid #0066cc;
+}
 
 .name {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.125rem;
+        line-height: 1.222222222222222;
+        padding-bottom: 0.2777777777777778em;
+        text-align: right;
 }
 
 .messageText {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+        font-family: Montserrat, sans-serif;
+        line-height: 1.25;
+        white-space: pre-wrap;
 }
 
 .time {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 600;
-        font-size: 10px;
-        line-height: 12px;
-        padding-left: 10px;
+        font-size: 0.625rem;
+        line-height: 1.2;
+        text-align: right;
+        padding: 0 0.625rem;
+}
+
+@media (max-width: 47.99875em) {
+        .text {
+                max-width: 100%;
+        }
+
+        .name {
+                font-size: 0.875rem;
+        }
+
+        .messageText {
+                font-size: 0.75rem;
+        }
 }
