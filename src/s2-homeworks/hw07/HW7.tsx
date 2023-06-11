@@ -12,9 +12,9 @@ import s from './HW7.module.css'
 * */
 
 const arr = [
-    { id: 1, value: 'x' },
-    { id: 2, value: 'y' },
-    { id: 3, value: 'z' },
+    { id: 1, value: 'Pre-junior' },
+    { id: 2, value: 'Junior' },
+    { id: 3, value: 'Junior +' },
 ] // value может быть изменено
 
 const HW7 = () => {
@@ -25,7 +25,7 @@ const HW7 = () => {
             <div className={s2.hwTitle}>Homework #7</div>
 
             {/*демонстрация возможностей компонент:*/}
-            <div className={s2.hw}>
+            <div className={`${s2.hw} ${s2.hw_7}`}>
                 <div className={s.container}>
                     <div>
                         <SuperSelect
