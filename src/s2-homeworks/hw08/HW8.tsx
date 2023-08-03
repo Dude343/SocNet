@@ -30,7 +30,7 @@ const initialPeople: UserType[] = [
     { _id: 8, name: 'Ирина', age: 55 },
 ]
 
-const HW8 = () => {
+export const HW8 = () => {
     const [people, setPeople] = useState<UserType[]>(initialPeople)
     const [currentSort, setCurrentSort] = useState('')
 
