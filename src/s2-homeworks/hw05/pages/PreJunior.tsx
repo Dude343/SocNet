@@ -4,7 +4,7 @@ import HW2 from '../../hw02/HW2'
 import HW3 from '../../hw03/HW3'
 import HW4 from '../../hw04/HW4'
 
-function PreJunior() {
+export const PreJunior: React.FC = () => {
     return (
         <div id={'hw5-page-pre-junior'}>
             {/*pre junior page*/}
@@ -15,5 +15,3 @@ function PreJunior() {
         </div>
     )
 }
-
-export default PreJunior

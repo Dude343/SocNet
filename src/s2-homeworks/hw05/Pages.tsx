@@ -1,15 +1,15 @@
-import React from 'react'
-import { Routes, Route, Navigate,  } from 'react-router-dom'
-import Error404 from './pages/Error404'
-import PreJunior from './pages/PreJunior'
-import Junior from './pages/Junior'
-import JuniorPlus from './pages/JuniorPlus'
+import React from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
+import Error404 from "./pages/Error404";
+import { PreJunior } from "./pages/PreJunior";
+import { Junior } from "./pages/Junior";
+import JuniorPlus from "./pages/JuniorPlus";
 
 export const PATH = {
-    PRE_JUNIOR: '/pre-junior',
-    JUNIOR: '/junior',
-    JUNIOR_PLUS: '/junior-plus',
-}
+    PRE_JUNIOR: "/pre-junior",
+    JUNIOR: "/junior",
+    JUNIOR_PLUS: "/junior-plus",
+};
 
 function Pages() {
     return (
@@ -29,8 +29,7 @@ function Pages() {
                 <Route path="/*" element={<Error404 />} />
             </Routes>
         </div>
-
-    )
+    );
 }
 
-export default Pages
+export default Pages;
