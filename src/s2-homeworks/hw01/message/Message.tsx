@@ -1,43 +1,37 @@
-import React from 'react'
-import s from './Message.module.css'
-import { message0, MessageType } from "../HW1"
+import React from "react";
+import s from "./Message.module.css";
+import { MessageType } from "../HW1";
 
-// нужно создать правильный тип вместо any
 export type MessagePropsType = {
     message: MessageType;
 };
 
-// нужно отобразить приходящие данные
-const Message = (props: MessagePropsType) => {
+export const Message: React.FC<MessagePropsType> = (props) => {
     return (
-        <div id={'hw1-message-' + props.message.id} className={`${s.message} ${s.messageRight}`}>
+        <div id={"hw1-message-" + props.message.id} className={s.message}>
             <div className={s.imageAndText}>
                 <img
-                    id={'hw1-avatar-' + props.message.id}
+                    id={"hw1-avatar-" + props.message.id}
                     src={props.message.user.avatar}
-                    alt="avatar"
-                //
+                    alt={`Avatar of ${props.message.user.name}`}
                 />
                 <div className={s.text}>
-                    <div id={'hw1-name-' + props.message.id} className={s.name}>
-                        {/*создаёт студент*/}
-                        {props.message.user.name}
-                        {/**/}
+                    <div id={"hw1-name-" + props.message.id} className={s.name}>
+                        <span>{props.message.user.name}</span>
                     </div>
-                    <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-                        {/*создаёт студент*/}
+                    <pre
+                        id={"hw1-text-" + props.message.id}
+                        className={s.messageText}
+                    >
                         {props.message.message.text}
-                        {/**/}
                     </pre>
                 </div>
             </div>
-            <div id={'hw1-time-' + props.message.id} className={s.time}>
-                {/*создаёт студент*/}
-                {props.message.message.time}
-                {/**/}
+            <div id={"hw1-time-" + props.message.id} className={s.time}>
+                <time dateTime={props.message.message.time}>
+                    {props.message.message.time}
+                </time>
             </div>
         </div>
-    )
-}
-
-export default Message
+    );
+};
