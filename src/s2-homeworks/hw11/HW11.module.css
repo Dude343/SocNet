@@ -1,8 +1,17 @@
 .container {
-}
-
-.wrapper {
-}
-
-.number {
-}
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1.5625rem;
+        font-weight: 600;
+    }
+    
+    .number {
+        display: inline-block;
+        width: 1.0625rem;
+    }
