@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/SocNet/static/css/main.0db01b11.css",
-    "main.js": "/SocNet/static/js/main.b884d1cb.js",
+    "main.css": "/SocNet/static/css/main.f63a8471.css",
+    "main.js": "/SocNet/static/js/main.ab5b1fa3.js",
     "static/js/787.66cb4309.chunk.js": "/SocNet/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/SocNet/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/200.svg": "/SocNet/static/media/200.2b4de1542921864a6ecb8c3301ea4670.svg",
+    "static/media/error.svg": "/SocNet/static/media/error.9a99652a785b87f2f448e23e5da3045d.svg",
+    "static/media/500.svg": "/SocNet/static/media/500.65355d1617c6a93fc93572680052f0b7.svg",
+    "static/media/400.svg": "/SocNet/static/media/400.4e46e304dcfdcae89fcfb902d8863816.svg",
     "static/media/404.svg": "/SocNet/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/SocNet/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/editIcon.svg": "/SocNet/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
     "index.html": "/SocNet/index.html",
     "static/media/checked.svg": "/SocNet/static/media/checked.b75ca55e8759862b4083.svg",
     "static/media/burger.svg": "/SocNet/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.0db01b11.css.map": "/SocNet/static/css/main.0db01b11.css.map",
-    "main.b884d1cb.js.map": "/SocNet/static/js/main.b884d1cb.js.map",
+    "main.f63a8471.css.map": "/SocNet/static/css/main.f63a8471.css.map",
+    "main.ab5b1fa3.js.map": "/SocNet/static/js/main.ab5b1fa3.js.map",
     "787.66cb4309.chunk.js.map": "/SocNet/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0db01b11.css",
-    "static/js/main.b884d1cb.js"
+    "static/css/main.f63a8471.css",
+    "static/js/main.ab5b1fa3.js"
   ]
 }
