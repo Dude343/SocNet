@@ -1,22 +1,61 @@
 .buttonsContainer {
-}
-
+        display: flex;
+        column-gap: 1.5rem;
+        row-gap: 0.5rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+    }
+    
 .responseContainer {
-}
-
+        display: flex;
+        align-items: center;
+        column-gap: 5.875rem;
+    }
+    
 .imageContainer {
 }
 
 .image {
+
 }
 
-.textContainer{
+.textContainer {
 }
 
 .code {
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin-bottom: 0.4em;
 }
 
 .text {
 }
+
 .info {
+}
+
+@media (max-width: 61.99875em) {
+    .responseContainer {
+        gap: 1rem;
+    }
+
+    .image {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 39.75em) {
+    .responseContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imageContainer {
+        order: 2;
+    }
+
+    .textContainer {
+        order: 1;
+        text-align: center;
+    }
 }
